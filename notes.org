@@ -1,0 +1,6 @@
+#+title: Notes
+
+* TODO before installing
+** [ ] Change root passwords
+** [ ] Forget home network
+
