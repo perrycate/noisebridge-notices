@@ -1,6 +1,43 @@
 #+title: Notes
 
-* TODO before installing
+* TODO
+** [ ] Get wkhtmltoimage working
+Might as well go ahead and set up a docker container for this.
+** [ ] Test displaying an image on the kindle 4
+** [ ] Write script (or similar) for generating images for events
+** [ ] FTP (or similar) for hosting images
+** [ ] Set up image cycling logic on kindles
+** [ ] Point kindles at image host
+
+* TODO before installing at nb
 ** [ ] Change root passwords
 ** [ ] Forget home network
 
+* Architecture
+** Rough thoughts
+*** Keep kindles dumb clients, makes easier to manage.
+*** Also the kindle 4s have less memory and older firmware than modern kindles anyway.
+*** Assume unreliability - if updated images can't be fetched, the kindles should keep cycling on the last known events
+
+** Desired state (tentative)
+*** Kindles have 2 cron jobs:
+**** One to sync a folder of images to display.
+**** One to cycle through images.
+Have a file somewhere with the index of the current image being displayed?
+
+*** FTP server(?)
+Stores the files
+Idea: Anyone can upload their own.
+(Is this a good idea for a hackerspace? Probably not?)
+
+*** Event puller
+On a cron (or similar), pull events from [meetup? luma?], generate images, and send to ftp server
+
+* Hardware
+Let's 3D print a mount for the kindles? Screw them into the wall.
+
+* Notes for wiki
+** Inspirational reading
+https://www.mariannefeng.com/portfolio/kindle/
+
+https://wiki.mobileread.com/wiki/Eips
