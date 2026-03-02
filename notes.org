@@ -12,6 +12,7 @@ Might as well go ahead and set up a docker container for this.
 * TODO before installing at nb
 ** [ ] Change root passwords
 ** [ ] Forget home network
+** [ ] Transfer repo to noisebridge org
 
 * Architecture
 ** Rough thoughts
