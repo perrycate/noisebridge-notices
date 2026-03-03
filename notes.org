@@ -1,9 +1,9 @@
 #+title: Notes
 
 * TODO
-** [ ] Get wkhtmltoimage working
+** [x] Get wkhtmltoimage working
 Might as well go ahead and set up a docker container for this.
-** [ ] Test displaying an image on the kindle 4
+** [x] Test displaying an image on the kindle 4
 ** [ ] Write script (or similar) for generating images for events
 ** [ ] FTP (or similar) for hosting images
 ** [ ] Set up image cycling logic on kindles
