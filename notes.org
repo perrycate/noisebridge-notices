@@ -37,8 +37,18 @@ On a cron (or similar), pull events from [meetup? luma?], generate images, and s
 * Hardware
 Let's 3D print a mount for the kindles? Screw them into the wall.
 
+* Kindles
+Don't use `crontab -e` (wrong location), just `vi /etc/crontab/root`.
+May need to restart cron after making changes, `/etc/init.d/cron restart`
+
+eips seems finicky about pngs - it MUST have rotation metadata, apparently.
+Need to run output of wkhtmltoimage through imagemagick's convert:
+`convert <file> -rotate 0 <file>`.
+TODO pngcheck - what's actually going on here?
+
 * Notes for wiki
 ** Inspirational reading
 https://www.mariannefeng.com/portfolio/kindle/
+https://www.sixfoisneuf.fr/posts/kindle-hacking-deeper-dive-internals/
 
 https://wiki.mobileread.com/wiki/Eips
