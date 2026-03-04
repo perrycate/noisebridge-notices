@@ -46,6 +46,9 @@ Need to run output of wkhtmltoimage through imagemagick's convert:
 `convert <file> -rotate 0 <file>`.
 TODO pngcheck - what's actually going on here?
 
+Images in the webpage need to be converted to grayscale first:
+`convert test.avif -colorspace Gray -depth 8 test.png`
+
 * Notes for wiki
 ** Inspirational reading
 https://www.mariannefeng.com/portfolio/kindle/

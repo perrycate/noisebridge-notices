@@ -2,7 +2,7 @@
 
 set -e
 
-wkhtmltoimage --width 600 --height 800 ./input.html output.png
+wkhtmltoimage --enable-local-file-access --width 600 --height 800 ./input.html output.png
 
 # Seems to add some rotation metadata that eips needs to display the image properly.
 # ¯\_(ツ)_/¯
