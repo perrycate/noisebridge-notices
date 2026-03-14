@@ -48,6 +48,7 @@ TODO pngcheck - what's actually going on here?
 
 Images in the webpage need to be converted to grayscale first:
 `convert test.avif -colorspace Gray -depth 8 test.png`
+(Actually maybe it's sufficient to just do this to the final image? Will check later.)
 
 * Notes for wiki
 ** Inspirational reading
